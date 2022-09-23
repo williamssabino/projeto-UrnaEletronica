@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section class="container">
+        <div id="urna">
+            <div class="tela">
+                <div class="tela-sup">
+                    <div class="sup1">
+                        <div class="voto">
+                            <div class="nameVoto">SEU VOTO PARA</div>
+                        </div>
+                        
+                        <div class="cargo ">
+                            VEREADOR
+                        </div>
+                        
+                        <div class="numero">
+                            
+                        </div>
+                        <div class="descricao">    
+                           <div class="nome">
+                                NOME:
+                            </div>
+                            <div class="partido">
+                                <div>PARTIDO:</div>
+                                <div class="nomePartido"></div>
+                            </div>
+                            <div class="vice">
+                                <div><br> vice-prefeito:</div>
+                                <div class="nomeVice"></div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="sup2">
+                        <div class="fts" id="ftPref">
+                            <div>
+                                <img src="imagens/prefeitos/boto.png" alt="">
+                                <p>Prefeito</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="fts" id="ftVice">
+                            <div>
+                                <img src="imagens/prefeitos/judo.png" alt="">
+                                <p>Vice-Prefeito</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tela-inf">
+                    Aperte a tecla:<br>
+                      CONFIRMA para PROSSEGUIR<br>
+                       CORRIGE  para  REINICIAR este voto
+                </div>
+                          
+            </div>
+
+            <div class="teclado">
+                    <div class="fl">
+                        <div class="botao" onclick="clicou('1')">1</div>
+                        <div class="botao" onclick="clicou('2')">2</div>
+                        <div class="botao" onclick="clicou('3')">3</div>
+                    </div>
+                    
+
+                    <div class="fl">
+                        <div class="botao" onclick="clicou('4')">4</div>
+                        <div class="botao" onclick="clicou('5')">5</div>
+                        <div class="botao" onclick="clicou('6')">6</div>
+                    </div>
+                   
+
+                    <div class="fl">
+                        <div class="botao" onclick="clicou('7')">7</div>
+                        <div class="botao" onclick="clicou('8')">8</div>
+                        <div class="botao" onclick="clicou('9')">9</div>
+                    </div>
+
+                    
+                    <div class="fl">
+                        <div class="botao" onclick="clicou('0')">0</div>
+                    </div>
+                    
+
+                    <div class="fl" id="bts">
+                        <div class="botao" id="btnB" onclick="branco()">Branco</div>
+                        <div class="botao" id="btnCo" onclick="corrige()">Corrigir</div>
+                        <div class="botao" id="btnConf" onclick="confirma()">Confirmar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/etapas.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+</html>
